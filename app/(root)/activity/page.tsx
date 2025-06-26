@@ -20,12 +20,13 @@ async function Page({ params }: { params: { id: string } }) {
                             <Link key={activity._id} href={`/thread/${activity.parentId}`}>
                                 <article className="activity-card">
                                     <Image
-                                        src={activity.author.image}
-                                        alt="Profile Image"
-                                        width={30}
-                                        height={30}
-                                        className="object-cover rounded-full"
+                                          src={activity.author.image}
+                                          alt="Profile Image"
+                                          width={30}
+                                          height={30}
+                                          className="object-cover rounded-full w-6 h-6 md:w-[30px] md:h-[30px]"
                                     />
+
                                     <p className="!text-base-regular text-light-2">
                                         <span className="mr-2 text-primary-500">
                                             {activity.author.name}
